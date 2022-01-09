@@ -18,7 +18,7 @@ if TYPE_CHECKING:
 
     from scripts.core.game import Game
 
-__all__ = [ "Assets"]
+__all__ = ["Assets"]
 
 
 ######### TO DO LIST  ##########
