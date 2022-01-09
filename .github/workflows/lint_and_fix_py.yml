@@ -13,6 +13,7 @@ jobs:
         run: pip install black isort
       - name: Run black and isort
         run: black --check scripts/ && isort --check-only scripts/
+        continue-on-error: true
       - name: If needed, commit black changes to the pull request
         if: failure()
         run: |
